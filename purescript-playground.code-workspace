@@ -5,7 +5,16 @@
       "name": "purescript-workspace"
     },
     {
-      "path": "first-tries"
+      "path": "01-introduction"
+    },
+    {
+      "path": "02-getting-started"
+    },
+    {
+      "path": "03-functions-and-records"
+    },
+    {
+      "path": "04-recursion-maps-and-folds"
     }
   ]
 }
