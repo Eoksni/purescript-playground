@@ -26,3 +26,11 @@ Host default
 ```
 
 Open `/vagrant` directory.
+
+Open terminal:
+
+```sh
+git config --global -e
+```
+
+Add there your configuration.

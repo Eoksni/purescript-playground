@@ -23,10 +23,10 @@ Vagrant.configure(2) do |config|
 	  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 	  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-	  nvm install 12
-	SHELL
+    nvm install 12
 
-	config.vm.provision "purescript", type: "shell", inline: "npm install -g purescript pulp bower"
+    npm install -g purescript@0.12.x pulp bower
+	SHELL
 
 	# config.vm.provision :docker
 	# config.vm.provision "pip-install", type: "shell", inline: "apt-get install -y python-pip"
