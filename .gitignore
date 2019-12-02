@@ -1,3 +1,6 @@
+*.log
+.vagrant
+
 # Dependencies
 .psci_modules
 bower_components
