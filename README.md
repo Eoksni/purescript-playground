@@ -31,6 +31,7 @@ Open terminal:
 
 ```sh
 git config --global -e
+git config --global credential.helper store
 ```
 
 Add there your configuration.
