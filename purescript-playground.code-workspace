@@ -18,6 +18,9 @@
     },
     {
       "path": "05-pattern-matching"
+    },
+    {
+      "path": "06-type-classes"
     }
   ]
 }
