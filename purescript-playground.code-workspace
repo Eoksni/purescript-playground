@@ -21,6 +21,9 @@
     },
     {
       "path": "06-type-classes"
+    },
+    {
+      "path": "07-applicative-validation"
     }
   ]
 }
