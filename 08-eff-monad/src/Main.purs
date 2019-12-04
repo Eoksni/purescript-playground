@@ -19,4 +19,4 @@ main = do
     Nothing -> throw "Main element not found."
     Just c  ->
       let app = counter { label: "Increment" }
-       in render app c
+      in render app c
