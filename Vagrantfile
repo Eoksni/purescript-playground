@@ -10,12 +10,12 @@ Vagrant.configure(2) do |config|
 	config.vm.provision "default-directory", type: "shell", privileged: false, inline: "echo \"\\\n\\\ncd /vagrant\" >> /home/vagrant/.bashrc"
 	config.vm.provision "fix-inotify", type: "shell", inline: "echo fs.inotify.max_user_watches=524288 | tee -a /etc/sysctl.conf && sysctl -p"
 
-	# config.vm.provision "node_modules_api", type: "shell", run: "always", inline: <<-SHELL
-	#   PROJECT=strata-town-api
-	#   mkdir -p "/volumes/$PROJECT/node_modules" && chown vagrant:vagrant "/volumes/$PROJECT/node_modules"
-	#   mkdir -p "/vagrant/$PROJECT/node_modules" && chown vagrant:vagrant "/vagrant/$PROJECT/node_modules"
-	#   mount --bind "/volumes/$PROJECT/node_modules" "/vagrant/$PROJECT/node_modules"
-	# SHELL
+	config.vm.provision "node_modules_08-eff-monad", type: "shell", run: "always", inline: <<-SHELL
+	  PROJECT=08-eff-monad
+	  mkdir -p "/volumes/$PROJECT/node_modules" && chown vagrant:vagrant "/volumes/$PROJECT/node_modules"
+	  mkdir -p "/vagrant/$PROJECT/node_modules" && chown vagrant:vagrant "/vagrant/$PROJECT/node_modules"
+	  mount --bind "/volumes/$PROJECT/node_modules" "/vagrant/$PROJECT/node_modules"
+	SHELL
 
 	config.vm.provision "nvm-install", type: "shell", privileged: false, inline: "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash"
 	config.vm.provision "nvm-default", type: "shell", privileged: false, inline: <<-SHELL
