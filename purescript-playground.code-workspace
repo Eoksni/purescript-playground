@@ -27,6 +27,9 @@
     },
     {
       "path": "08-eff-monad"
+    },
+    {
+      "path": "react-playground"
     }
   ]
 }
