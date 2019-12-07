@@ -2,7 +2,7 @@
   "folders": [
     {
       "path": ".",
-      "name": "purescript-workspace"
+      "name": "purescript-playground"
     },
     {
       "path": "01-introduction"
