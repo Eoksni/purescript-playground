@@ -34,5 +34,10 @@
     {
       "path": "lens"
     }
-  ]
+  ],
+  "settings": {
+    "purescript.addNpmPath": true,
+    "purescript.addSpagoSources": true,
+    "purescript.buildCommand": "spago build --purs-args --json-errors"
+  }
 }

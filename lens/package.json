@@ -2,6 +2,7 @@
   "private": true,
   "devDependencies": {
     "purescript": "^0.13.5",
+    "purty": "^4.5.2",
     "spago": "^0.12.1"
   }
 }
