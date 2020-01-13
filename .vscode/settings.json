@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "01-introduction": true,
+    "02-getting-started": true,
+    "03-functions-and-records": true,
+    "04-recursion-maps-and-folds": true,
+    "05-pattern-matching": true,
+    "06-type-classes": true,
+    "07-applicative-validation": true,
+    "lens": true,
+    "react-playground": true
+  }
+}
