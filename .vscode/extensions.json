@@ -1,8 +1,7 @@
 {
   "recommendations": [
-    "ms-vscode-remote.remote-ssh",
-    "bbenoist.vagrant",
     "editorconfig.editorconfig",
-    "nwolverson.ide-purescript"
+    "nwolverson.ide-purescript",
+    "mvakula.vscode-purty"
   ]
 }
