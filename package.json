@@ -1,0 +1,7 @@
+{
+	"private": true,
+	"devDependencies": {
+		"editorconfig": "^0.15.3",
+		"purty": "^4.5.2"
+	}
+}
