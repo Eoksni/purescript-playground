@@ -3,9 +3,8 @@ module Main where
 import Prelude
 import Data.Array.NonEmpty (NonEmptyArray, cons')
 import Data.Array.NonEmpty as NonEmptyArray
-import Data.Foldable (find)
-import Data.Lens (Lens, Lens', Prism, Prism', Traversal', filtered, is, lens, only, over, preview, set, setJust, toListOf, traversed, view)
-import Data.Maybe (Maybe(..), isJust)
+import Data.Lens (Lens, Lens', Prism', Traversal', is, lens, only, over, preview, set, toListOf, traversed, view)
+import Data.Maybe (isJust)
 import Data.String as String
 import Data.Tuple (Tuple(..), fst)
 import Effect (Effect)

@@ -1,9 +1,8 @@
 module OneAnother where
 
 import Prelude
-import Control.Alt ((<|>))
 import Data.Either (Either(..))
-import Data.Lens (Getter', Lens', Prism', Traversal', _Left, _Right, lens, preview, set, to, traversed, view, wander, withPrism)
+import Data.Lens (Getter', Prism', _Left, _Right, preview, to)
 import Data.Maybe (fromJust)
 import Partial.Unsafe (unsafePartial)
 

@@ -1,7 +1,7 @@
 module Playground1 where
 
 import Prelude
-import Data.Lens (Getter', Lens', Prism', Traversal', _Just, lens, prism', to, traversed)
+import Data.Lens (Lens', Prism', Traversal', prism', traversed)
 import Data.Lens.Fold (traverseOf_)
 import Data.Lens.Record (prop)
 import Data.Maybe (Maybe(..))

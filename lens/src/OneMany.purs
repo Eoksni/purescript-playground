@@ -1,8 +1,7 @@
 module OneMany where
 
 import Prelude
-import Control.Alt ((<|>))
-import Data.Either (Either(..))
+import Data.Either (Either)
 import Data.Lens (Traversal', _Left, _Right, traversed)
 
 type OneMany
