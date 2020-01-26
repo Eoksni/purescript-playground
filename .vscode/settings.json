@@ -13,6 +13,7 @@
     "06-type-classes": true,
     "07-applicative-validation": true,
     "lens": true,
-    "react-playground": true
+    "react-playground": true,
+    "playground": true
   }
 }
