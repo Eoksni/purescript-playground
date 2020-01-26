@@ -3,12 +3,14 @@ module Main where
 import Prelude
 import Effect (Effect)
 import Effect.Class (class MonadEffect, liftEffect)
+import Effect.Console (log)
 import Effect.Exception (throw)
 import Effect.Unsafe (unsafePerformEffect)
+import Prim.TypeError (class Warn, Text)
 import Unsafe.Coerce (unsafeCoerce)
 
 class NotImplemented a where
-  notImplemented :: a
+  notImplemented :: Warn (Text "NotImplemented") => a
 
 instance notImplementedEffect :: NotImplemented (Effect a) where
   notImplemented = throw notImplemented
@@ -23,5 +25,5 @@ else instance notImplementedAny :: NotImplemented a where
 -- hello = notImplemented
 main :: Effect Unit
 main = do
-  notImplemented
- -- logShow (notImplemented :: Boolean)
+  log "hello"
+ -- notImplemented -- logShow (notImplemented :: Boolean)
