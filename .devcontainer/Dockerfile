@@ -90,6 +90,9 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
   && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
   && apt-get update && apt-get install -y yarn
 
+# common dependencies
+RUN apt-get update && apt-get install -y make
+
 # Allow DooD (Docker outside of Docker)
 RUN su $USERNAME -c 'echo "sudo chown root:docker /var/run/docker.sock" >> "$USERHOME/.bashrc"'
 

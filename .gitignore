@@ -5,7 +5,9 @@
 .psci_modules
 bower_components
 node_modules
+.cache
 
 # Generated files
 .psci
 output
+dist

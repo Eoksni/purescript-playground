@@ -36,6 +36,9 @@
     },
     {
       "path": "playground"
+    },
+    {
+      "path": "react-basic-hooks-playground"
     }
   ],
   "settings": {
