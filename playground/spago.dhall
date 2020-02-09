@@ -4,7 +4,13 @@ You can edit this file as you like.
 -}
 { name = "my-project"
 , dependencies =
-    [ "console", "effect", "exceptions", "psci-support", "unsafe-coerce" ]
+    [ "console"
+    , "effect"
+    , "exceptions"
+    , "psci-support"
+    , "spec"
+    , "unsafe-coerce"
+    ]
 , packages = ./packages.dhall
-, sources = [ "src/**/*.purs" ]
+, sources = [ "src/**/*.purs", "test/**/*.purs" ]
 }

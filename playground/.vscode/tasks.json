@@ -8,6 +8,13 @@
       "type": "shell",
       "command": "npx spago run",
       "problemMatcher": []
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "group": "test",
+      "command": "make test",
+      "problemMatcher": []
     }
   ]
 }
