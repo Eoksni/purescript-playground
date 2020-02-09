@@ -11,3 +11,4 @@ node_modules
 .psci
 output
 dist
+dist-demo
