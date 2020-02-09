@@ -1,16 +1,27 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const copyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: {
-    'main': './src/Main.purs',
-    'demo/main': './demo/Main.purs',
-    '../dist-demo/main': './demo/Main.purs'
+    'main/bundle': './src/Main.purs',
+    'demo/bundle-demo': './demo/Main.purs'
+  },
+  output: {
+    path: path.join(__dirname, "dist"),
+    filename: "[name].js"
+    // sourceMapFilename: "index_bundle_demo.js.map"
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: path.join(__dirname, 'src', 'index.ejs') })
+    // new copyWebpackPlugin([
+    //   { from: 'src/index.html', to: '.' },
+    //   { from: "demo/index.html", to: "../dist-demo" },
+    // ])
   ],
+  devServer: {
+    contentBase: [path.join(__dirname, "dist/main"), path.join(__dirname, "dist/demo")],
+    port: 8083
+  },
   module: {
     rules: [
       {

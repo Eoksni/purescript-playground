@@ -1,0 +1,5 @@
+{
+  "purescript.addNpmPath": true,
+  "purescript.addSpagoSources": false,
+  "purescript.buildCommand": "pulp build -- --json-errors"
+}
