@@ -95,3 +95,5 @@ RUN su $USERNAME -c 'echo "sudo chown root:docker /var/run/docker.sock" >> "$USE
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
+
+CMD while sleep 1000; do :; done
