@@ -6,23 +6,9 @@
   "mounts": [
     "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
   ],
-  // The optional 'workspaceFolder' property is the path VS Code should open by default when
-  // connected. This is typically a file mount in .devcontainer/docker-compose.yml
-  "workspaceFolder": "/workspace",
-  // Use 'settings' to set *default* container specific settings.json values on container create.
-  // You can edit these settings after create using File > Preferences > Settings > Remote.
   "settings": {
-    // This will ignore your local shell user setting for Linux since shells like zsh are typically
-    // not in base container images. You can also update this to an specific shell to ensure VS Code
-    // uses the right one for terminals and tasks. For example, /bin/bash (or /bin/ash for Alpine).
     "terminal.integrated.shell.linux": "/bin/bash"
   },
-  // Uncomment the next line if you want start specific services in your Docker Compose config.
-  // "runServices": [],
-  // Uncomment the next line if you want to keep your containers running after VS Code shuts down.
-  // "shutdownAction": "none",
-  // Uncomment the next line to run commands after the container is created - for example installing git.
-  "postCreateCommand": "scripts/dev-setup.sh",
   "extensions": [
     "ms-azuretools.vscode-docker"
   ]
