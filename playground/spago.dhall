@@ -8,7 +8,9 @@ You can edit this file as you like.
     , "effect"
     , "exceptions"
     , "psci-support"
+    , "quickcheck"
     , "spec"
+    , "spec-quickcheck"
     , "unsafe-coerce"
     ]
 , packages = ./packages.dhall
