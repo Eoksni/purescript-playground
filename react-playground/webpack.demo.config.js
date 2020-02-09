@@ -3,18 +3,18 @@ const copyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/Main.purs',
+  entry: './demo/Main.purs',
   output: {
-    path: path.join(__dirname, "dist"),
-    filename: "bundle.js"
+    path: path.join(__dirname, "dist-demo"),
+    filename: "bundle-demo.js"
   },
   plugins: [
     new copyWebpackPlugin([
-      { from: 'src/index.html', to: '.' }
+      { from: 'demo/index.html', to: '.' }
     ])
   ],
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, "dist-demo"),
     port: 8082
   },
   module: {
