@@ -11,5 +11,6 @@
   },
   "extensions": [
     "ms-azuretools.vscode-docker"
-  ]
+  ],
+  "postCreateCommand": "./scripts/dev-setup.sh"
 }
