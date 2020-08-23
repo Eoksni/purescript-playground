@@ -2,6 +2,7 @@
   "recommendations": [
     "editorconfig.editorconfig",
     "nwolverson.ide-purescript",
-    "mvakula.vscode-purty"
+    "mvakula.vscode-purty",
+    "panaeon.dhall-lang"
   ]
 }

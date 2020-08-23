@@ -3,14 +3,5 @@
   "name": "purescript-playground",
   "remoteUser": "vscode",
   "dockerFile": "Dockerfile",
-  "mounts": [
-    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
-  ],
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-  "extensions": [
-    "ms-azuretools.vscode-docker"
-  ],
   "postCreateCommand": "./scripts/dev-setup.sh"
 }
